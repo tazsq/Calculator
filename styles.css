@@ -126,3 +126,20 @@ html {
 .cursor-pointer {
   cursor: pointer;
 }
+@media (max-width: 600px) {
+  .calculator {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 20%;
+    height: 50px;
+    font-size: 1.2em;
+  }
+
+  .display {
+    font-size: 2em;
+    height: 60px;
+  }
+}
