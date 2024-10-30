@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  font-size: 16px;
+  font-family: inherit;
+  color: #fff;
+}
+body,
+html {
+  height: 100%;
+  font-family: sans-serif;
+}
+.calculator {
+  background-color: black;
+  height: 700px;
+  width: 380px;
+  margin: 10px auto;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  align-items: stretch;
+  border: 2px solid #ededed;
+  /* max-width: 280px;
+  width: 100%;
+  padding: 2rem 1rem; */
+}
+.display {
+  background-color: rgb(0, 0, 0);
+  /* height: 300px;
+  width: 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-grow: 1;
+  flex-basis: 250px;
+  font-size: 4rem;
+  padding-right: 15px;
+  margin-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dial {
+  background-color: rgb(0, 0, 0);
+  /* height: 300px;
+  width: 300px; */
+  flex-grow: 2;
+  display: grid;
+  /* gap: 20px; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  /* width: inherit; */
+}
+.dial div,
+.dial {
+  margin: 6.6px;
+  border-radius: 50px;
+  align-content: center;
+}
+.display {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  user-select: none;
+}
+.dial div {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78px;
+  /* width: 83px; */
+}
+.btn-grey {
+  background-color: #9f9f9f;
+  color: #000;
+}
+.span-2 {
+  grid-column: 1 / span 2;
+}
+.btn-dark-grey {
+  background-color: #313131;
+}
+.btn-orange {
+  background-color: #f69906;
+}
+.btn {
+  /* border-radius: 50%; */
+  /* width: 60px;
+  height: 60px; */
+  color: #ffffff;
+  font-size: 25px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  line-height: 1.4;
+  user-select: none;
+}
+.btn-dark-grey:hover {
+  background-color: #999999;
+}
+.btn:hover {
+  transform: translate(-2px, -3px);
+}
+.btn-top {
+  font-size: 25px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  color: #000;
+  user-select: none;
+}
+.btn-top:hover {
+  transform: translate(-2px, -3px);
+  background-color: #fff;
+}
+.btn-active {
+  background-color: #ffffff;
+  color: #f69906;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
